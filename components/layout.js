@@ -4,16 +4,15 @@ import Head from "next/head";
 export default function Layout ({ index, children }) { 
     return (
         <>
-        <img src="/indeks.png" width={144} height={144}></img>
         <Head>
             <title>Dyskography</title>
         </Head>
+
+        <img src="/indeks.png" width={144} height={144}></img>
+        <h1>Welcome to Dyskography</h1>
+
         {index ? (
             <>
-                <div>
-                    <h1>Welcome to our main site of Dyskography
-                    </h1>
-                </div>
             </>
             ) : (
             <footer>
