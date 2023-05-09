@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
 
-// checking if on index site, if not showing button to back on homepage
 export default function Layout ({ index, children }) { 
     return (
         <>
