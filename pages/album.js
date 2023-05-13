@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 
-export default function albumPage () {
+
+export default function AlbumPage () {
     return (
         <>
         <Layout> </Layout>

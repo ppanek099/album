@@ -1,14 +1,12 @@
 import Link from "next/link";
 import Layout from "../components/layout";
+import SongsTable from "../components/song";
 
-export default function homePage() {
+export default function HomePage() {
   return (
     <>
     <Layout index> </Layout>
-    <p></p>
-    <Link href="./author">Go to author page!</Link>
-    <p></p>
-    <Link href="./album">Go to album page!</Link>
+    <div className="songstable"><SongsTable/></div>
     </>
   )
 }
