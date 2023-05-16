@@ -1,18 +1,45 @@
 body {
-  background-color: gray;
+  background: #404040;
+  background-attachment: fixed; 
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.songbox, .authorbox {
-  margin: 10px;
-  border-style: solid;
-}
-.songstable, .LayoutNavbar {
+.songstable {
   display: flex;
   flex-wrap: wrap;
-}
-.LayoutNavbar {
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding: 40px calc((100% - (255px * 3)) / 2);
+}
+.songbox, .authorbox {
+  background-color: gray;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  box-shadow: 0 4px 3px -3px black;
+  margin: 1em 20px;
+}
+
+.LayoutNavbar {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 12px;
+  background-color: #131313;
+  padding: 3px;
+  border-bottom-style: solid;
+  border-color: #131313;
+  box-shadow: 0 4px 31px -2px black;
+  
 }
 .logoimage {
   border-radius: 50%;
+}
+.layoutnavbarlink {
+  color: white;
+}
+.songscomponentlink {
+  color: black;
+  font-size: 120%;
 }
